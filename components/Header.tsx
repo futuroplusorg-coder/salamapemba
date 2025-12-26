@@ -37,7 +37,7 @@ const Header: React.FC = () => {
     {
       label: texts.header.about,
       submenu: [
-        { href: '#mission', label: texts.header.mission },
+        { href: '#about', label: texts.header.mission },
         { href: '#/report', label: texts.header.report },
         { href: '#experiences', label: texts.header.experiences },
         { href: '#/team', label: texts.header.team },
@@ -114,7 +114,7 @@ const Header: React.FC = () => {
             <div key={index} className="relative group">
               <button className="flex items-center text-gray-700 hover:text-[#D95F43] transition-colors duration-300 font-medium py-2 cursor-pointer">
                 {item.label}
-                <svg xmlns="http://www.w.org/2000/svg" className="h-4 w-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
               </button>
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
                 <div className="p-2">

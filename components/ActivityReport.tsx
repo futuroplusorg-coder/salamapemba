@@ -17,7 +17,7 @@ const ActivityReport: React.FC = () => {
         const reportData = {
             activities: [
                 { name: 'Seja Pescador por 1 Dia', total: 23, women: 7, men: 16 },
-                { name: '*Excursões à Aldeia Nikunkwa', total: 146, women: 48, men: 98 },
+                { name: '*Excursão à Aldeia Nikunkwa', total: 146, women: 48, men: 98 },
                 { name: '**Passeios de Barco', total: 33, women: 23, men: 10 },
                 { name: 'Excursão a Mecúfi', total: 69, women: 29, men: 40 },
                 { name: 'Pequenos Exploradores', total: 22, women: 12, men: 10 }
@@ -57,7 +57,7 @@ const ActivityReport: React.FC = () => {
         const chartInstances: any[] = [];
 
         // Gráfico de Participação por Atividade
-        if (activityChartRef.current) {
+        if (typeof Chart !== 'undefined' && activityChartRef.current) {
             const activityCtx = activityChartRef.current.getContext('2d');
             chartInstances.push(new Chart(activityCtx, {
                 type: 'bar',
@@ -73,7 +73,7 @@ const ActivityReport: React.FC = () => {
         }
 
         // Gráfico de Distribuição de Género
-        if (genderChartRef.current) {
+        if (typeof Chart !== 'undefined' && genderChartRef.current) {
             const genderCtx = genderChartRef.current.getContext('2d');
             chartInstances.push(new Chart(genderCtx, {
                 type: 'doughnut',
@@ -86,7 +86,7 @@ const ActivityReport: React.FC = () => {
         }
 
         // Gráfico de Evolução Nikunkwa
-        if (nikunkwaChartRef.current) {
+        if (typeof Chart !== 'undefined' && nikunkwaChartRef.current) {
             const nikunkwaCtx = nikunkwaChartRef.current.getContext('2d');
             chartInstances.push(new Chart(nikunkwaCtx, {
                 type: 'line',
@@ -98,12 +98,12 @@ const ActivityReport: React.FC = () => {
                         { label: 'Homens', data: reportData.nikunkwa.men, backgroundColor: colors.men, borderColor: colors.men, borderWidth: 2, fill: false, tension: 0.2, pointRadius: 5, pointHoverRadius: 7 }
                     ]
                 },
-                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { font: { size: 13 }, padding: 20, usePointStyle: true } }, title: { display: true, text: 'Evolução das Excursões à Aldeia Nikunkwa', font: { size: 16, weight: 'bold' }, padding: { top: 10, bottom: 20 } }, tooltip: { backgroundColor: 'rgba(32, 33, 36, 0.9)', titleFont: { size: 14 }, bodyFont: { size: 13 }, padding: 12, cornerRadius: 8 } }, scales: { x: { grid: { display: false }, ticks: { font: { size: 12 } } }, y: { beginAtZero: true, grid: { color: 'rgba(0, 0, 0, 0.05)' }, ticks: { font: { size: 12 }, padding: 10 } } } }
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { font: { size: 13 }, padding: 20, usePointStyle: true } }, title: { display: true, text: 'Evolução da Excursão à Aldeia Nikunkwa', font: { size: 16, weight: 'bold' }, padding: { top: 10, bottom: 20 } }, tooltip: { backgroundColor: 'rgba(32, 33, 36, 0.9)', titleFont: { size: 14 }, bodyFont: { size: 13 }, padding: 12, cornerRadius: 8 } }, scales: { x: { grid: { display: false }, ticks: { font: { size: 12 } } }, y: { beginAtZero: true, grid: { color: 'rgba(0, 0, 0, 0.05)' }, ticks: { font: { size: 12 }, padding: 10 } } } }
             }));
         }
 
         // Gráfico de Evolução Passeios de Barco
-        if (barcoChartRef.current) {
+        if (typeof Chart !== 'undefined' && barcoChartRef.current) {
             const barcoCtx = barcoChartRef.current.getContext('2d');
             chartInstances.push(new Chart(barcoCtx, {
                 type: 'line',
@@ -120,7 +120,7 @@ const ActivityReport: React.FC = () => {
         }
 
         // Gráfico de Origem dos Participantes
-        if (originChartRef.current) {
+        if (typeof Chart !== 'undefined' && originChartRef.current) {
             const originCtx = originChartRef.current.getContext('2d');
             chartInstances.push(new Chart(originCtx, {
                 type: 'doughnut',
@@ -219,7 +219,7 @@ const ActivityReport: React.FC = () => {
                     <div className="card">
                         <div className="card-header">
                             <div className="card-icon"><i className="fas fa-chart-line"></i></div>
-                            <h2 className="card-title">*Evolução das Excursões à Nikunkwa</h2>
+                            <h2 className="card-title">*Evolução da Excursão à Nikunkwa</h2>
                         </div>
                         <div className="chart-container"><canvas ref={nikunkwaChartRef}></canvas></div>
                     </div>
@@ -253,7 +253,7 @@ const ActivityReport: React.FC = () => {
                             </div>
                         </div>
                         <div className="activity-item">
-                            <div className="activity-name">Excursões à Aldeia Nikunkwa (4 edições)</div>
+                            <div className="activity-name">Excursão à Aldeia Nikunkwa (4 edições)</div>
                             <div className="activity-stats">
                                 <div className="activity-stat"><div className="stat-number">146</div><div className="stat-label">Total</div></div>
                                 <div className="activity-stat"><div className="stat-number">48</div><div className="stat-label">Mulheres</div></div>

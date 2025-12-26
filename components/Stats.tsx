@@ -5,7 +5,8 @@ import { useLanguage } from '../LanguageContext';
 const useCountUp = (end: number, duration: number = 2000) => {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
-  const animationFrameRef = useRef<number>();
+  // FIX: Initialize useRef with null to create a mutable ref and satisfy TypeScript.
+  const animationFrameRef = useRef<number | null>(null);
 
   useEffect(() => {
     const element = ref.current;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../LanguageContext';
 
-const CEO_IMAGE_URL = 'https://i.postimg.cc/pXs2brWp/Red-and-Beige-Vintage-Bold-Typographic-Beauty-Salon-Logo-2.png';
+const CEO_IMAGE_URL = 'https://i.postimg.cc/Qt8NRwKX/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(5).png';
 
 const Team: React.FC = () => {
   const { texts } = useLanguage();
@@ -30,15 +30,11 @@ const Team: React.FC = () => {
               <div className="relative inline-block">
                 <img
                   src={CEO_IMAGE_URL}
-                  alt="Fátima Salama, CEO & Fundadora"
+                  alt="Filomena Rebocho, CEO & Fundadora"
                   className="mx-auto mb-4 w-48 h-48 rounded-full object-cover shadow-lg border-4 border-white group-hover:border-[#D95F43] transition-colors duration-300"
                 />
-                 <div className="absolute bottom-2 right-2 bg-[#D95F43] text-white text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">
-                    {texts.team.ceo}
-                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mt-4">Fátima Salama</h3>
-              <p className="text-gray-500 mt-1 font-medium">{texts.team.ceo} & {texts.team.founder}</p>
+              <h3 className="text-2xl font-bold text-gray-800 mt-4">Filomena Rebocho</h3>
               <p className="text-gray-600 mt-4 text-sm leading-relaxed">
                 {texts.team.ceoQuote}
               </p>

@@ -7,45 +7,46 @@ const LOGO_URL = 'https://i.postimg.cc/FFS3k8Dv/1.png';
 interface TeamMember {
   image: string;
   name: string;
-  roleKey: 'founder' | 'consultant' | 'juniorIntern';
 }
 
 const teamMembers: TeamMember[] = [
   {
-    image: 'https://i.postimg.cc/pXs2brWp/Red-and-Beige-Vintage-Bold-Typographic-Beauty-Salon-Logo-2.png',
-    name: 'Fátima Salama',
-    roleKey: 'founder',
+    image: 'https://i.postimg.cc/Qt8NRwKX/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(5).png',
+    name: 'Filomena Rebocho',
   },
   {
-    image: 'https://i.postimg.cc/5tnGjYrk/Red-and-Beige-Vintage-Bold-Typographic-Beauty-Salon-Logo.png',
+    image: 'https://i.postimg.cc/7LrpRzJk/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(3).png',
     name: 'Luis Soares',
-    roleKey: 'consultant',
   },
   {
-    image: 'https://i.postimg.cc/z3Z24nyQ/Red-and-Beige-Vintage-Bold-Typographic-Beauty-Salon-Logo-1.png',
+    image: 'https://i.postimg.cc/P5yRS7H0/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(4).png',
     name: 'Salimo Saide',
-    roleKey: 'juniorIntern',
   },
+  {
+    image: 'https://i.postimg.cc/RCTCvsCd/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(2).png',
+    name: 'Telma Alves',
+  }
 ];
 
-const TeamMemberCard: React.FC<{ member: TeamMember; roleText: string; onClick: () => void }> = ({ member, roleText, onClick }) => (
-  <div 
-    className="group text-center cursor-pointer bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
-    onClick={onClick}
-  >
-    <div className="overflow-hidden h-72">
-      <img
-        src={member.image}
-        alt={member.name}
-        className="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110"
-      />
+const TeamMemberCard: React.FC<{ member: TeamMember; onClick: () => void }> = ({ member, onClick }) => {
+  return (
+    <div 
+      className="group text-center cursor-pointer bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+      onClick={onClick}
+    >
+      <div className="overflow-hidden h-72">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110"
+        />
+      </div>
+      <div className="p-6">
+        <h3 className="text-2xl font-bold text-gray-800">{member.name}</h3>
+      </div>
     </div>
-    <div className="p-6">
-      <h3 className="text-2xl font-bold text-gray-800">{member.name}</h3>
-      <p className="text-[#D95F43] mt-1 font-semibold">{roleText}</p>
-    </div>
-  </div>
-);
+  );
+};
 
 
 const CEOPage: React.FC = () => {
@@ -53,12 +54,6 @@ const CEOPage: React.FC = () => {
     const [isAnimatingOut, setIsAnimatingOut] = useState(false);
     const [selectedMemberIndex, setSelectedMemberIndex] = useState(0);
     const { texts } = useLanguage();
-
-    const roleMap = {
-        founder: `${texts.team.ceo} & ${texts.team.founder}`,
-        consultant: texts.ceoPage.consultant,
-        juniorIntern: texts.ceoPage.juniorIntern
-    }
 
     const openModal = (index: number) => {
         setSelectedMemberIndex(index);
@@ -122,12 +117,11 @@ const CEOPage: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                       {teamMembers.map((member, index) => (
                         <TeamMemberCard 
                           key={member.name} 
                           member={member} 
-                          roleText={roleMap[member.roleKey]}
                           onClick={() => openModal(index)} />
                       ))}
                     </div>
@@ -169,7 +163,6 @@ const CEOPage: React.FC = () => {
                         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-full px-4 text-center">
                             <div className="bg-black/60 rounded-lg p-4 inline-block backdrop-blur-sm">
                                 <h3 className="text-white text-2xl font-bold">{teamMembers[selectedMemberIndex].name}</h3>
-                                <p className="text-gray-300 text-lg">{roleMap[teamMembers[selectedMemberIndex].roleKey]}</p>
                             </div>
                         </div>
                     </div>

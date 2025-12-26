@@ -17,62 +17,103 @@ export const translations = {
     },
     about: {
       title: 'A Alma de Cabo Delgado - Moçambique',
-      p1: 'Bem-vindo à Salama Pemba, a sua porta de entrada para a alma de Moçambique. Somos mais do que uma empresa de turismo; somos contadores de histórias, apaixonados por ligar os viajantes à cultura vibrante, à beleza intocada e ao calor humano de Pemba.',
-      p2: 'Criamos experiências autênticas que mergulham no coração da vida local, transformando a sua viagem numa coleção de memórias inesquecíveis. Connosco, não apenas visita, pertence.',
-      tag1: 'Cultura',
-      tag2: 'Aventura',
-      tag3: 'Comunidade',
-      learnMore: 'Saiba Mais Sobre Nós',
-      showLess: 'Mostrar Menos',
-      coreValues: 'Os Nossos Valores Fundamentais',
-      authenticityTitle: 'Autenticidade',
-      authenticityText: 'Ligamo-lo à verdadeira cultura moçambicana, longe dos clichés turísticos, para uma imersão genuína.',
-      sustainabilityTitle: 'Sustentabilidade',
-      sustainabilityText: 'Comprometemo-nos a proteger o paraíso que partilhamos, apoiando a economia local e conservando o ambiente.',
-      passionTitle: 'Paixão',
-      passionText: 'Amamos Moçambique e isso reflete-se em cada detalhe, em cada sorriso, em cada experiência que criamos para si.',
-      ourStory: 'A Nossa História',
-      founderStory1: 'Nascida da paixão de um viajante que se tornou residente, a Salama Pemba começou como um sonho: partilhar a magia autêntica de Moçambique com o mundo. Deixámo-nos cativar pela hospitalidade, pelas paisagens virgens e pelas histórias sussurradas pelo vento.',
-      founderStory2: 'Hoje, essa paixão é o coração de cada viagem que desenhamos, garantindo que cada visitante sinta a mesma ligação profunda que nos inspirou a chamar a este paraíso o nosso lar.',
-    },
-    missionVision: {
-      missionTitle: 'A Nossa Missão',
-      missionText: 'Ligar as pessoas à essência de Moçambique através de experiências autênticas, sustentáveis e inesquecíveis.',
-      missionPoint1: 'Sustentabilidade Ambiental',
-      missionPoint2: 'Apoio Comunitário',
-      missionPoint3: 'Experiências Autênticas',
+      p1: 'Bem-vindo à Salama Pemba, a sua porta de entrada para a essência de Cabo Delgado. Somos mais do que uma empresa de turismo; somos contadores de histórias, movidos pela paixão de aproximar pessoas da cultura vibrante, da beleza intocada e do calor humano desta província única.',
+      p2: 'Acreditamos que viajar vai além de visitar lugares. É conhecer pessoas, compreender culturas e sentir o verdadeiro espírito de um destino. Por isso, criamos experiências autênticas que mergulham no coração da vida local, transformando cada viagem numa coleção de memórias inesquecíveis. Connosco, não apenas visita mas pertence!',
+      missionTitle: 'A nossa Missão',
+      missionText: 'Promover experiências turísticas autênticas, responsáveis e culturalmente enraizadas, conectando pessoas à essência de Cabo Delgado e contribuindo para o desenvolvimento das comunidades locais.',
       visionTitle: 'A Nossa Visão',
-      visionText: 'Ser a referência em turismo responsável, e transformar cada viagem numa força positiva para a comunidade e o ambiente.',
-      visionQuote: '"Acreditamos que cada viagem pode ser uma força para o bem, enriquecendo tanto quem visita como quem recebe."',
+      visionText: 'Ser uma referência em turismo cultural e comunitário em Moçambique, valorizando a identidade local, preservando o património cultural e natural e criando impactos positivos e duradouros.',
+      valuesTitle: 'Os Nossos Valores',
+      valuesItems: [
+        'Autenticidade – experiências reais, vividas com as comunidades',
+        'Conexão humana – turismo que aproxima pessoas e culturas',
+        'Sustentabilidade – respeito pela natureza e pelas tradições locais'
+      ],
     },
     experiences: {
       title: 'As Nossas Experiências Inesquecíveis',
       subtitle: 'Deixe-nos guiá-lo por aventuras que despertam os sentidos e criam memórias para toda a vida.',
+      viewMore: 'Ver Mais',
       items: {
         quirimbas: {
-          title: 'Passeio de Barco às Ilhas Quirimbas',
-          description: 'Navegue por águas azul-turquesa e descubra ilhas paradisíacas com areia branca e coqueiros. Um refúgio de paz e beleza natural.',
+          title: 'Passeio de Barco pela Baía de Pemba',
+          description: 'Explore a baía de Pemba e encante-se com a beleza natural de Cabo Delgado. Mergulhe nas águas cristalinas, admire praias deslumbrantes e observe a diversidade da vida marinha, enquanto conhece a cultura e tradições das comunidades locais.',
         },
         snorkeling: {
-          title: 'Aventura de Snorkeling nos Recifes',
-          description: 'Mergulhe num mundo subaquático vibrante. Explore corais coloridos e nade com peixes exóticos nos espetaculares recifes de Pemba.',
+          title: 'Seja Pescador por um dia!',
+          description: 'Viva a experiência autêntica da vida local em Cabo Delgado tornando-se pescador por um dia. Acompanhe os pescadores da região, aprenda técnicas tradicionais de pesca e participe das actividades diárias que sustentam a comunidade costeira.',
         },
         cultural: {
-          title: 'Tour Cultural pela Cidade de Pemba',
-          description: 'Sinta o pulso da vida moçambicana. Conheça os mercados locais, a arquitetura histórica e os sorrisos contagiantes do povo de Pemba.',
+          title: 'Excursão à Aldeia Nikunkwa',
+          description: 'Descubra a vida e cultura autêntica da aldeia Nikunkwa distrito de Metuge. Nesta excursão, os visitantes têm a oportunidade de explorar a aldeia, conhecer tradições, e modos de vida, e interagir com a comunidade de forma respeitosa e enriquecedora.',
         },
         sunset: {
-          title: 'Cruzeiro ao Pôr do Sol em Dhow',
-          description: 'Viva um momento mágico a bordo de um dhow tradicional. Deixe-se levar pelo vento enquanto o sol pinta o céu com cores de fogo.',
+          title: 'Excursão ao Distrito de Mecufi',
+          description: 'Explore o Distrito de Mecufi e descubra a riqueza natural, cultural e histórica desta região de Cabo Delgado. Uma experiência autêntica, conectando-se com comunidades e tradições locais.',
         },
         cooking: {
-          title: 'Visita ao Mercado e Aula de Culinária',
-          description: 'Desperte os seus sentidos com os aromas e sabores locais. Aprenda os segredos da culinária moçambicana numa aula prática e deliciosa.',
+          title: 'Excursão Aldeia de Namau',
+          description: 'Descubra a Aldeia de Namau, um lugar onde a cultura e tradições de Cabo Delgado ganham vida. Conecte-se com a comunidade e vivencie a essência de uma aldeia costeira autêntica.',
         },
         relax: {
-          title: 'Dia de Relax na Praia do Wimbe',
-          description: 'Relaxe sob o sol na famosa Praia do Wimbe. Desfrute da areia dourada, das águas calmas e da atmosfera descontraída deste paraíso.',
+          title: 'Tour Histórico e Cultural pela Cidade de Pemba',
+          description: 'Descubra a história, cultura e identidade de Pemba neste passeio guiado pela cidade. Explore ruas vibrantes, mercados locais e marcos históricos que revelam a riqueza cultural e o passado desta cidade única.',
         },
+      },
+      details: {
+        back: 'Voltar às Experiências',
+        quirimbas: {
+          images: [
+            "https://i.postimg.cc/kXYVWxYc/Whats-App-Image-2025-12-26-at-4-55-31-PM.jpg",
+            "https://i.postimg.cc/2yKzLxj6/Whats_App-Image-2025-12-26-at-4-55-33-PM.jpg",
+            "https://i.postimg.cc/Sx8yj8BM/Whats_App-Image-2025-12-26-at-4-55-31-PM-(1).jpg",
+            "https://i.postimg.cc/6qgXp5zr/Whats_App-Image-2025-12-26-at-4-55-32-PM.jpg"
+          ]
+        },
+        snorkeling: {
+          images: [
+            "https://i.postimg.cc/MKkJRBsV/WhatsApp_Image_2025-10-23_at_2.36.25_PM.jpg",
+            "https://i.postimg.cc/VsZp5SZP/1.jpg",
+            "https://i.postimg.cc/VvvhD167/5.jpg",
+            "https://i.postimg.cc/C5RvbNPJ/4.jpg",
+            "https://i.postimg.cc/pLfsQyCL/18.avif"
+          ]
+        },
+        cultural: {
+          images: [
+            "https://i.postimg.cc/zXWx2S4R/Whats_App_Image_2025_12_26_at_5_36_27_PM_(1).jpg",
+            "https://i.postimg.cc/C1PGddtt/Whats_App-Image-2025-12-26-at-5-36-27-PM.jpg",
+            "https://i.postimg.cc/nL57tNDf/Whats_App-Image-2025-12-26-at-5-48-56-PM.jpg",
+            "https://i.postimg.cc/LXnTtzz6/Whats_App-Image-2025-12-26-at-5-36-29-PM.jpg",
+            "https://i.postimg.cc/QxkpW6RV/Whats_App-Image-2025-12-26-at-5-49-24-PM.jpg"
+          ]
+        },
+        sunset: {
+          images: [
+            "https://i.postimg.cc/s26XFWbV/Whats-App-Image-2025-12-26-at-6-01-44-PM.jpg",
+            "https://i.postimg.cc/fW7GJsRQ/Whats_App-Image-2025-12-26-at-6-06-22-PM.jpg",
+            "https://i.postimg.cc/B6TVL5sB/Whats_App-Image-2025-12-26-at-6-05-53-PM.jpg",
+            "https://i.postimg.cc/4xHwHvQh/Whats_App-Image-2025-12-26-at-6-07-31-PM.jpg",
+            "https://i.postimg.cc/5tM5HhtS/Whats_App-Image-2025-12-26-at-6-05-50-PM.jpg"
+          ]
+        },
+        cooking: {
+          images: [
+            "https://i.postimg.cc/fyTy1KR3/Whats_App_Image_2025_12_26_at_6_22_57_PM_(1).jpg",
+            "https://i.postimg.cc/W300sXVf/Whats_App_Image_2025_12_26_at_6_22_56_PM.jpg",
+            "https://i.postimg.cc/gcq35SNv/Whats_App_Image_2025_12_26_at_6_22_57_PM.jpg",
+            "https://i.postimg.cc/hPc1tWf5/Whats_App_Image_2025_12_26_at_6_22_56_PM_(1).jpg"
+          ]
+        },
+        relax: {
+          images: [
+            "https://i.postimg.cc/jj2L8vCh/Whats_App_Image_2025_12_26_at_6_36_29_PM.jpg",
+            "https://i.postimg.cc/BQJZYNVX/Whats_App_Image_2025_12_26_at_6_36_28_PM-(1).jpg",
+            "https://i.postimg.cc/vBj8SdCD/Whats_App_Image_2025_12_26_at_5_20_17_PM.jpg",
+            "https://i.postimg.cc/5yYyxtLD/Whats_App_Image_2025_12_26_at_5_20_37_PM.jpg",
+            "https://i.postimg.cc/Y9tQqQSS/Whats_App_Image_2025_12_26_at_5_20_16_PM.jpg"
+          ]
+        }
       }
     },
     gallery: {
@@ -100,13 +141,10 @@ export const translations = {
       subtitle: 'A força por trás da magia. Pessoas apaixonadas dedicadas a tornar a sua viagem inesquecível.',
       ceoQuote: '"O meu sonho é partilhar a beleza e a alma de Moçambique com o mundo, criando um impacto positivo em cada passo."',
       ceo: 'CEO',
-      founder: 'Fundadora',
       viewTeam: 'Ver Equipa Completa →',
     },
     ceoPage: {
       goHome: 'Voltar à Página Principal',
-      consultant: 'Consultor',
-      juniorIntern: 'Estagiário Júnior',
       prevMember: 'Membro anterior',
       nextMember: 'Próximo membro',
     },
@@ -142,60 +180,101 @@ export const translations = {
       title: 'The Soul of Cabo Delgado - Mozambique',
       p1: 'Welcome to Salama Pemba, your gateway to the soul of Mozambique. We are more than a tourism company; we are storytellers, passionate about connecting travelers to the vibrant culture, untouched beauty, and human warmth of Pemba.',
       p2: 'We create authentic experiences that dive into the heart of local life, transforming your journey into a collection of unforgettable memories. With us, you don\'t just visit, you belong.',
-      tag1: 'Culture',
-      tag2: 'Adventure',
-      tag3: 'Community',
-      learnMore: 'Learn More About Us',
-      showLess: 'Show Less',
-      coreValues: 'Our Core Values',
-      authenticityTitle: 'Authenticity',
-      authenticityText: 'We connect you to the real Mozambican culture, away from tourist clichés, for a genuine immersion.',
-      sustainabilityTitle: 'Sustainability',
-      sustainabilityText: 'We are committed to protecting the paradise we share, supporting the local economy, and conserving the environment.',
-      passionTitle: 'Passion',
-      passionText: 'We love Mozambique, and it shows in every detail, every smile, every experience we create for you.',
-      ourStory: 'Our Story',
-      founderStory1: 'Born from the passion of a traveler who became a resident, Salama Pemba started as a dream: to share the authentic magic of Mozambique with the world. We were captivated by the hospitality, the pristine landscapes, and the stories whispered by the wind.',
-      founderStory2: 'Today, that passion is the heart of every trip we design, ensuring that every visitor feels the same deep connection that inspired us to call this paradise our home.',
-    },
-    missionVision: {
       missionTitle: 'Our Mission',
-      missionText: 'To connect people to the essence of Mozambique through authentic, sustainable, and unforgettable experiences.',
-      missionPoint1: 'Environmental Sustainability',
-      missionPoint2: 'Community Support',
-      missionPoint3: 'Authentic Experiences',
+      missionText: 'To promote authentic, responsible, and culturally rooted tourism experiences, connecting people to the essence of Cabo Delgado and contributing to the development of local communities.',
       visionTitle: 'Our Vision',
-      visionText: 'To be the benchmark in responsible tourism, and to transform every journey into a positive force for the community and the environment.',
-      visionQuote: '"We believe that every trip can be a force for good, enriching both those who visit and those who host."',
+      visionText: 'To be a benchmark in cultural and community tourism in Mozambique, valuing local identity, preserving cultural and natural heritage, and creating positive, lasting impacts.',
+      valuesTitle: 'Our Values',
+      valuesItems: [
+        'Authenticity – real experiences, lived with the communities',
+        'Human connection – tourism that brings people and cultures together',
+        'Sustainability – respect for nature and local traditions'
+      ],
     },
     experiences: {
       title: 'Our Unforgettable Experiences',
       subtitle: 'Let us guide you through adventures that awaken the senses and create memories for a lifetime.',
+      viewMore: 'View More',
       items: {
         quirimbas: {
-          title: 'Quirimbas Islands Boat Trip',
-          description: 'Sail through turquoise waters and discover paradise islands with white sand and coconut trees. A haven of peace and natural beauty.',
+          title: 'Pemba Bay Boat Tour',
+          description: 'Explore Pemba Bay and be enchanted by the natural beauty of Cabo Delgado. Dive into crystal-clear waters, admire stunning beaches, and observe diverse marine life while getting to know the culture and traditions of local communities.',
         },
         snorkeling: {
-          title: 'Reef Snorkeling Adventure',
-          description: 'Dive into a vibrant underwater world. Explore colorful corals and swim with exotic fish in the spectacular reefs of Pemba.',
+          title: 'Be a Fisherman for a Day!',
+          description: 'Live the authentic local life in Cabo Delgado by becoming a fisherman for a day. Join the local fishermen, learn traditional fishing techniques, and participate in the daily activities that sustain the coastal community.',
         },
         cultural: {
-          title: 'Pemba City Cultural Tour',
-          description: 'Feel the pulse of Mozambican life. Discover local markets, historical architecture, and the infectious smiles of the people of Pemba.',
+          title: 'Excursion to Nikunkwa Village',
+          description: 'Discover the authentic life and culture of the Nikunkwa village in the Metuge district. On this excursion, visitors have the opportunity to explore the village, learn about traditions and ways of life, and interact with the community in a respectful and enriching way.',
         },
         sunset: {
-          title: 'Sunset Dhow Cruise',
-          description: 'Experience a magical moment aboard a traditional dhow. Let the wind carry you as the sun paints the sky with fiery colors.',
+          title: 'Excursion to Mecufi District',
+          description: 'Explore the Mecufi District and discover the natural, cultural, and historical richness of this region. An authentic experience, connecting you with local communities and traditions.',
         },
         cooking: {
-          title: 'Market Visit and Cooking Class',
-          description: 'Awaken your senses with local aromas and flavors. Learn the secrets of Mozambican cuisine in a practical and delicious class.',
+          title: 'Namau Village Excursion',
+          description: 'Discover Namau Village, a place where the culture and traditions of Cabo Delgado come to life. Connect with the local community and experience the essence of an authentic coastal village.',
         },
         relax: {
-          title: 'Relaxing Day at Wimbe Beach',
-          description: 'Relax under the sun at the famous Wimbe Beach. Enjoy the golden sand, calm waters, and the laid-back atmosphere of this paradise.',
+          title: 'Historical and Cultural Tour of Pemba City',
+          description: 'Discover the history, culture, and identity of Pemba on this guided city tour. Explore vibrant streets, local markets, and historical landmarks that reveal the cultural richness and past of this unique city.',
         },
+      },
+      details: {
+        back: 'Back to Experiences',
+        quirimbas: {
+          images: [
+            "https://i.postimg.cc/kXYVWxYc/Whats-App-Image-2025-12-26-at-4-55-31-PM.jpg",
+            "https://i.postimg.cc/2yKzLxj6/Whats_App-Image-2025-12-26-at-4-55-33-PM.jpg",
+            "https://i.postimg.cc/Sx8yj8BM/Whats_App-Image-2025-12-26-at-4-55-31-PM-(1).jpg",
+            "https://i.postimg.cc/6qgXp5zr/Whats_App-Image-2025-12-26-at-4-55-32-PM.jpg"
+          ]
+        },
+        snorkeling: {
+          images: [
+            "https://i.postimg.cc/MKkJRBsV/WhatsApp_Image_2025-10-23_at_2.36.25_PM.jpg",
+            "https://i.postimg.cc/VsZp5SZP/1.jpg",
+            "https://i.postimg.cc/VvvhD167/5.jpg",
+            "https://i.postimg.cc/C5RvbNPJ/4.jpg",
+            "https://i.postimg.cc/pLfsQyCL/18.avif"
+          ]
+        },
+        cultural: {
+          images: [
+            "https://i.postimg.cc/zXWx2S4R/Whats_App_Image_2025_12_26_at_5_36_27_PM_(1).jpg",
+            "https://i.postimg.cc/C1PGddtt/Whats_App-Image-2025-12-26-at-5-36-27-PM.jpg",
+            "https://i.postimg.cc/nL57tNDf/Whats_App-Image-2025-12-26-at-5-48-56-PM.jpg",
+            "https://i.postimg.cc/LXnTtzz6/Whats_App-Image-2025-12-26-at-5-36-29-PM.jpg",
+            "https://i.postimg.cc/QxkpW6RV/Whats_App-Image-2025-12-26-at-5-49-24-PM.jpg"
+          ]
+        },
+        sunset: {
+          images: [
+            "https://i.postimg.cc/s26XFWbV/Whats-App-Image-2025-12-26-at-6-01-44-PM.jpg",
+            "https://i.postimg.cc/fW7GJsRQ/Whats_App-Image-2025-12-26-at-6-06-22-PM.jpg",
+            "https://i.postimg.cc/B6TVL5sB/Whats_App-Image-2025-12-26-at-6-05-53-PM.jpg",
+            "https://i.postimg.cc/4xHwHvQh/Whats_App-Image-2025-12-26-at-6-07-31-PM.jpg",
+            "https://i.postimg.cc/5tM5HhtS/Whats_App-Image-2025-12-26-at-6-05-50-PM.jpg"
+          ]
+        },
+        cooking: {
+          images: [
+            "https://i.postimg.cc/fyTy1KR3/Whats_App_Image_2025_12_26_at_6_22_57_PM_(1).jpg",
+            "https://i.postimg.cc/W300sXVf/Whats_App_Image_2025_12_26_at_6_22_56_PM.jpg",
+            "https://i.postimg.cc/gcq35SNv/Whats_App_Image_2025_12_26_at_6_22_57_PM.jpg",
+            "https://i.postimg.cc/hPc1tWf5/Whats_App_Image_2025_12_26_at_6_22_56_PM_(1).jpg"
+          ]
+        },
+        relax: {
+          images: [
+            "https://i.postimg.cc/jj2L8vCh/Whats_App_Image_2025_12_26_at_6_36_29_PM.jpg",
+            "https://i.postimg.cc/BQJZYNVX/Whats_App_Image_2025_12_26_at_6_36_28_PM-(1).jpg",
+            "https://i.postimg.cc/vBj8SdCD/Whats_App_Image_2025_12_26_at_5_20_17_PM.jpg",
+            "https://i.postimg.cc/5yYyxtLD/Whats_App_Image_2025_12_26_at_5_20_37_PM.jpg",
+            "https://i.postimg.cc/Y9tQqQSS/Whats_App_Image_2025_12_26_at_5_20_16_PM.jpg"
+          ]
+        }
       }
     },
     gallery: {
@@ -223,13 +302,10 @@ export const translations = {
       subtitle: 'The force behind the magic. Passionate people dedicated to making your trip unforgettable.',
       ceoQuote: '"My dream is to share the beauty and soul of Mozambique with the world, creating a positive impact with every step."',
       ceo: 'CEO',
-      founder: 'Founder',
       viewTeam: 'View Full Team →',
     },
     ceoPage: {
       goHome: 'Back to Main Page',
-      consultant: 'Consultant',
-      juniorIntern: 'Junior Intern',
       prevMember: 'Previous member',
       nextMember: 'Next member',
     },
