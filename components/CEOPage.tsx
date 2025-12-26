@@ -24,7 +24,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     image: 'https://i.postimg.cc/RCTCvsCd/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(2).png',
-    name: 'Telma Alves',
+    name: 'Celma Alves',
   }
 ];
 

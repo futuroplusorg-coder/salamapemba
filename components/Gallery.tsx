@@ -2,20 +2,20 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useLanguage } from '../LanguageContext';
 
 const images = [
-  { src: "https://i.postimg.cc/TP261XtP/Whats-App-Image-2025-10-23-at-2-36-24-PM-1.jpg", caption: "Partilhando momentos únicos nas águas de Pemba." },
-  { src: "https://i.postimg.cc/1XFx2R3C/Whats-App-Image-2025-10-23-at-2-36-25-PM-1.jpg", caption: "O dhow espera pela próxima aventura." },
-  { src: "https://i.postimg.cc/MKkJRBsV/Whats-App-Image-2025-10-23-at-2-36-25-PM.jpg", caption: "Um convite ao relaxamento nas praias de Cabo Delgado." },
-  { src: "https://i.postimg.cc/7LRW4vcF/Whats-App-Image-2025-10-23-at-2-33-28-PM-1.jpg", caption: "A alegria contagiante de uma excursão em grupo." },
-  { src: "https://i.postimg.cc/65yshV4K/13.jpg", caption: "O sol despede-se no horizonte índico." },
-  { src: "https://i.postimg.cc/pLfsQyCL/18.avif", caption: "Um paraíso de areia e mar turquesa." },
-  { src: "https://i.postimg.cc/15pdBW5Q/17.avif", caption: "A explorar a vida secreta dos corais." },
-  { src: "https://i.postimg.cc/VvvhD167/5.jpg", caption: "A navegar em águas de pura felicidade." },
-  { src: "https://i.postimg.cc/VsZp5SZP/1.jpg", caption: "A tranquilidade infinita da Praia do Wimbe." },
-  { src: "https://i.postimg.cc/1XKpnNPM/9.jpg", caption: "Sorrisos que contam a história de Pemba." },
-  { src: "https://i.postimg.cc/mgC5dmb6/12.jpg", caption: "Velas ao vento, cores no céu." },
-  { src: "https://i.postimg.cc/C5RvbNPJ/4.jpg", caption: "Cores e sabores do mercado local." },
-  { src: "https://i.postimg.cc/NfBFfjFq/15.jpg", caption: "A dança dos dhows nas águas de Pemba." },
-  { src: "https://i.postimg.cc/hGzP3Jyg/14.jpg", caption: "Onde o tempo pára e a beleza começa." },
+  { src: "https://i.postimg.cc/TP261XtP/Whats-App-Image-2025-10-23-at-2-36-24-PM-1.jpg" },
+  { src: "https://i.postimg.cc/1XFx2R3C/Whats-App-Image-2025-10-23-at-2-36-25-PM-1.jpg" },
+  { src: "https://i.postimg.cc/MKkJRBsV/Whats-App-Image-2025-10-23-at-2-36-25-PM.jpg" },
+  { src: "https://i.postimg.cc/7LRW4vcF/Whats-App-Image-2025-10-23-at-2-33-28-PM-1.jpg" },
+  { src: "https://i.postimg.cc/65yshV4K/13.jpg" },
+  { src: "https://i.postimg.cc/pLfsQyCL/18.avif" },
+  { src: "https://i.postimg.cc/15pdBW5Q/17.avif" },
+  { src: "https://i.postimg.cc/VvvhD167/5.jpg" },
+  { src: "https://i.postimg.cc/VsZp5SZP/1.jpg" },
+  { src: "https://i.postimg.cc/1XKpnNPM/9.jpg" },
+  { src: "https://i.postimg.cc/mgC5dmb6/12.jpg" },
+  { src: "https://i.postimg.cc/C5RvbNPJ/4.jpg" },
+  { src: "https://i.postimg.cc/NfBFfjFq/15.jpg" },
+  { src: "https://i.postimg.cc/hGzP3Jyg/14.jpg" },
 ];
 
 const Gallery: React.FC = () => {
@@ -123,14 +123,11 @@ const Gallery: React.FC = () => {
           >
             <img
               src={images[selectedImageIndex].src}
-              alt={images[selectedImageIndex].caption}
+              alt={`Galeria de Pemba ${selectedImageIndex + 1}`}
               className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
             />
              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-full px-4 text-center">
-                <p className="text-white text-base md:text-lg bg-black/50 rounded-full px-4 py-2 inline-block mb-2 transition-opacity duration-300">
-                  {images[selectedImageIndex].caption}
-                </p>
-                <p className="text-white text-sm opacity-80">
+                <p className="text-white text-sm bg-black/50 rounded-full px-3 py-1 inline-block opacity-80">
                   {selectedImageIndex + 1} / {images.length}
                 </p>
             </div>

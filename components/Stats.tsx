@@ -72,7 +72,6 @@ const useAnimateOnScroll = () => {
 
 // Icons
 const UsersIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>;
-const SuitcaseIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 6h12a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012 2z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" /></svg>;
 const FemaleIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15a6 6 0 100-12 6 6 0 000 12zm0 0v6m-3-3h6" /></svg>;
 const MaleIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 15a6 6 0 100-12A6 6 0 009 15zm6-12l6 6m0-6v6h-6" /></svg>;
 
@@ -122,11 +121,10 @@ const Stats: React.FC = () => {
             {texts.stats.subtitle}
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <StatCard icon={<UsersIcon />} colorClass="bg-[#00A0A0]" title={texts.stats.totalEnrollments} target={1500} delay="0ms" />
-          <StatCard icon={<SuitcaseIcon />} colorClass="bg-[#D95F43]" title={texts.stats.happyTravelers} target={980} delay="100ms" />
-          <StatCard icon={<FemaleIcon />} colorClass="bg-[#4FD1C5]" title={texts.stats.femaleTravelers} target={55} isPercentage={true} delay="200ms" />
-          <StatCard icon={<MaleIcon />} colorClass="bg-yellow-500" title={texts.stats.maleTravelers} target={45} isPercentage={true} delay="300ms" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <StatCard icon={<UsersIcon />} colorClass="bg-[#00A0A0]" title={texts.stats.totalEnrollments} target={825} delay="0ms" />
+          <StatCard icon={<FemaleIcon />} colorClass="bg-[#4FD1C5]" title={texts.stats.femaleTravelers} target={25} isPercentage={true} delay="200ms" />
+          <StatCard icon={<MaleIcon />} colorClass="bg-yellow-500" title={texts.stats.maleTravelers} target={75} isPercentage={true} delay="300ms" />
         </div>
       </div>
     </section>

@@ -155,9 +155,8 @@ export const translations = {
         title: 'O Nosso Impacto em Números',
         subtitle: 'Mais do que viagens, criamos ligações e oportunidades. Os nossos números contam essa história.',
         totalEnrollments: 'Inscrições Totais',
-        happyTravelers: 'Viajantes Felizes',
-        femaleTravelers: 'Mulheres Viajantes',
-        maleTravelers: 'Homens Viajantes'
+        femaleTravelers: 'Mulheres',
+        maleTravelers: 'Homens'
     }
   },
   en: {
@@ -316,9 +315,8 @@ export const translations = {
         title: 'Our Impact in Numbers',
         subtitle: 'More than trips, we create connections and opportunities. Our numbers tell that story.',
         totalEnrollments: 'Total Enrollments',
-        happyTravelers: 'Happy Travelers',
-        femaleTravelers: 'Female Travelers',
-        maleTravelers: 'Male Travelers'
+        femaleTravelers: 'Women',
+        maleTravelers: 'Men'
     }
   }
 };
