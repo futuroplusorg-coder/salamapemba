@@ -135,6 +135,7 @@ export const translations = {
       talkToUs: 'Fale Connosco',
       address: 'Avenida Marginal, Pemba, Moçambique',
       copyright: 'Todos os direitos reservados.',
+      bahiaCredit: 'Website criado e gerido pela',
     },
     team: {
       title: 'Conheça a Nossa Equipa',
@@ -157,7 +158,17 @@ export const translations = {
         totalEnrollments: 'Inscrições Totais',
         femaleTravelers: 'Mulheres',
         maleTravelers: 'Homens'
-    }
+    },
+    partners: {
+      title: 'Os Nossos Parceiros',
+      subtitle: 'Juntos, construímos experiências memoráveis e apoiamos o desenvolvimento local.',
+      institutional: 'Parceiros Institucionais',
+      private: 'Parceiros Privados'
+    },
+    // FIX: Add missing bahiaBanner translation to fix type error.
+    bahiaBanner: {
+      line1: 'Website criado e gerido pela',
+    },
   },
   en: {
     header: {
@@ -295,6 +306,7 @@ export const translations = {
       talkToUs: 'Talk to Us',
       address: 'Avenida Marginal, Pemba, Mozambique',
       copyright: 'All rights reserved.',
+      bahiaCredit: 'Website created and managed by',
     },
     team: {
       title: 'Meet Our Team',
@@ -317,6 +329,16 @@ export const translations = {
         totalEnrollments: 'Total Enrollments',
         femaleTravelers: 'Women',
         maleTravelers: 'Men'
-    }
+    },
+    partners: {
+      title: 'Our Partners',
+      subtitle: 'Together, we build memorable experiences and support local development.',
+      institutional: 'Institutional Partners',
+      private: 'Private Partners'
+    },
+    // FIX: Add missing bahiaBanner translation to fix type error.
+    bahiaBanner: {
+      line1: 'Website created and managed by',
+    },
   }
 };

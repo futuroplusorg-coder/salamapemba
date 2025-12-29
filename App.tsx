@@ -6,6 +6,7 @@ import Stats from './components/Stats';
 import Experiences from './components/Experiences';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import PartnerSection from './components/PartnerSection';
 import Footer from './components/Footer';
 import SplashScreen from './components/SplashScreen';
 import ActivityReport from './components/ActivityReport';
@@ -100,6 +101,7 @@ const MainApp: React.FC = () => {
         <Experiences />
         <Gallery />
         <Contact />
+        <PartnerSection />
       </main>
       <Footer />
     </div>

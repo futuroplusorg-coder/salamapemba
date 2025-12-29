@@ -71,9 +71,31 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Linha de Copyright */}
+        {/* Linha de Copyright e Créditos */}
         <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
           <p>&copy; {new Date().getFullYear()} Salama Pemba Tourism Experiences. {texts.footer.copyright}</p>
+          
+          <div className="mt-6 text-sm text-gray-500">
+            <p>
+              {texts.footer.bahiaCredit}{' '}
+              <a 
+                href="https://bahiasolutions.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="font-bold bg-gradient-to-r from-[#D95F43] to-[#00A0A0] text-transparent bg-clip-text hover:opacity-80 transition-opacity duration-300"
+              >
+                Bahia Solutions
+              </a>
+            </p>
+            <p className="mt-2 tracking-wider">
+              <a 
+                href="tel:+258875728882"
+                className="font-semibold text-teal-400 hover:text-teal-300 transition-colors duration-300"
+              >
+                +258 875728882
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -3,3 +3,12 @@ export interface Experience {
   description: string;
   image: string;
 }
+
+export interface Partner {
+  id: number;
+  name: string;
+  logoUrl: string;
+  category: 'institucional' | 'privado';
+  logoColor?: string;
+  textColor?: string;
+}
