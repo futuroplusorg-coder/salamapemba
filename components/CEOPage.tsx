@@ -1,45 +1,63 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Footer from './Footer';
 import { useLanguage } from '../LanguageContext';
+// FIX: Import the translations object to use its type definition.
+import { translations } from '../translations';
 
 const LOGO_URL = 'https://i.postimg.cc/FFS3k8Dv/1.png';
 
 interface TeamMember {
   image: string;
   name: string;
+  positionKey: keyof typeof translations.pt.ceoPage.positions;
+  descriptionKey: keyof typeof translations.pt.ceoPage.teamDescriptions;
 }
 
+// Data is now more structured, linking to translations for roles and descriptions
 const teamMembers: TeamMember[] = [
   {
     image: 'https://i.postimg.cc/Qt8NRwKX/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(5).png',
     name: 'Filomena Rebocho',
+    positionKey: 'ceo',
+    descriptionKey: 'filomena'
   },
   {
     image: 'https://i.postimg.cc/7LrpRzJk/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(3).png',
     name: 'Luis Soares',
+    positionKey: 'guide',
+    descriptionKey: 'luis'
   },
   {
     image: 'https://i.postimg.cc/P5yRS7H0/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(4).png',
     name: 'Salimo Saide',
+    positionKey: 'community',
+    descriptionKey: 'salimo'
   },
   {
     image: 'https://i.postimg.cc/RCTCvsCd/Pemba-Futebol-Quizz-GERADO-POR-KING-NZAMBA-NKUKU-(2).png',
     name: 'Celma Alves',
+    positionKey: 'coordinator',
+    descriptionKey: 'celma'
   }
 ];
 
-const TeamMemberCard: React.FC<{ member: TeamMember; onClick: () => void }> = ({ member, onClick }) => {
+const TeamMemberCard: React.FC<{ member: TeamMember; onClick: () => void; knowMeText: string; }> = ({ member, onClick, knowMeText }) => {
   return (
-    <div 
+    <div
       className="group text-center cursor-pointer bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
       onClick={onClick}
     >
-      <div className="overflow-hidden h-72">
+      <div className="relative overflow-hidden h-72">
         <img
           src={member.image}
           alt={member.name}
           className="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent flex items-end justify-center pb-4">
+          <span className="text-white text-base font-semibold tracking-wider border border-white/80 rounded-full px-5 py-2 transition-all duration-300 group-hover:bg-white/20 group-hover:border-white">
+            {knowMeText}
+          </span>
+        </div>
       </div>
       <div className="p-6">
         <h3 className="text-2xl font-bold text-gray-800">{member.name}</h3>
@@ -122,7 +140,9 @@ const CEOPage: React.FC = () => {
                         <TeamMemberCard 
                           key={member.name} 
                           member={member} 
-                          onClick={() => openModal(index)} />
+                          onClick={() => openModal(index)}
+                          knowMeText={texts.ceoPage.knowMe}
+                        />
                       ))}
                     </div>
                 </div>
@@ -152,17 +172,20 @@ const CEOPage: React.FC = () => {
                     </button>
 
                     <div 
-                        className={`relative p-4 ${isAnimatingOut ? 'animate-zoom-out' : 'animate-zoom-in'}`}
+                        className={`relative p-4 flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full ${isAnimatingOut ? 'animate-zoom-out' : 'animate-zoom-in'}`}
                         onClick={(e) => e.stopPropagation()}
                     >
                         <img
                             src={teamMembers[selectedMemberIndex].image}
                             alt={teamMembers[selectedMemberIndex].name}
-                            className="max-h-[80vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
+                            className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl border-4 border-white/50"
                         />
-                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-full px-4 text-center">
-                            <div className="bg-black/60 rounded-lg p-4 inline-block backdrop-blur-sm">
-                                <h3 className="text-white text-2xl font-bold">{teamMembers[selectedMemberIndex].name}</h3>
+                        <div className="text-center md:text-left">
+                            <div className="bg-black/20 rounded-lg p-6 backdrop-blur-sm">
+                                <h3 className="text-white text-3xl md:text-4xl font-bold">{teamMembers[selectedMemberIndex].name}</h3>
+                                <p className="text-white/90 text-md mt-4 italic leading-relaxed max-w-md">
+                                    "{texts.ceoPage.teamDescriptions[teamMembers[selectedMemberIndex].descriptionKey]}"
+                                </p>
                             </div>
                         </div>
                     </div>

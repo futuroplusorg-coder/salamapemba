@@ -82,7 +82,7 @@ export const translations = {
         cultural: {
           images: [
             "https://i.postimg.cc/zXWx2S4R/Whats_App_Image_2025_12_26_at_5_36_27_PM_(1).jpg",
-            "https://i.postimg.cc/C1PGddtt/Whats_App-Image-2025-12-26-at-5-36-27-PM.jpg",
+            "https://i.postimg.cc/C1PGddtt/Whats_App-Image-2025-12-26-at-5_36_27_PM.jpg",
             "https://i.postimg.cc/nL57tNDf/Whats_App-Image-2025-12-26-at-5-48-56-PM.jpg",
             "https://i.postimg.cc/LXnTtzz6/Whats_App-Image-2025-12-26-at-5-36-29-PM.jpg",
             "https://i.postimg.cc/QxkpW6RV/Whats_App-Image-2025-12-26-at-5-49-24-PM.jpg"
@@ -90,7 +90,7 @@ export const translations = {
         },
         sunset: {
           images: [
-            "https://i.postimg.cc/s26XFWbV/Whats-App-Image-2025-12-26-at-6-01-44-PM.jpg",
+            "https://i.postimg.cc/s26XFWbV/Whats_App-Image-2025-12-26-at-6-01-44-PM.jpg",
             "https://i.postimg.cc/fW7GJsRQ/Whats_App-Image-2025-12-26-at-6-06-22-PM.jpg",
             "https://i.postimg.cc/B6TVL5sB/Whats_App-Image-2025-12-26-at-6-05-53-PM.jpg",
             "https://i.postimg.cc/4xHwHvQh/Whats_App-Image-2025-12-26-at-6-07-31-PM.jpg",
@@ -108,10 +108,10 @@ export const translations = {
         relax: {
           images: [
             "https://i.postimg.cc/jj2L8vCh/Whats_App_Image_2025_12_26_at_6_36_29_PM.jpg",
-            "https://i.postimg.cc/BQJZYNVX/Whats_App_Image_2025_12_26_at_6_36_28_PM-(1).jpg",
-            "https://i.postimg.cc/vBj8SdCD/Whats_App_Image_2025_12_26_at_5_20_17_PM.jpg",
-            "https://i.postimg.cc/5yYyxtLD/Whats_App_Image_2025_12_26_at_5_20_37_PM.jpg",
-            "https://i.postimg.cc/Y9tQqQSS/Whats_App_Image_2025_12_26_at_5_20_16_PM.jpg"
+            "https://i.postimg.cc/BQJZYNVX/Whats_App-Image-2025-12-26-at-6_36_28_PM-(1).jpg",
+            "https://i.postimg.cc/vBj8SdCD/Whats_App-Image-2025-12-26-at-5-20-17-PM.jpg",
+            "https://i.postimg.cc/5yYyxtLD/Whats_App-Image-2025-12-26-at-5-20-37-PM.jpg",
+            "https://i.postimg.cc/Y9tQqQSS/Whats_App-Image-2025-12-26-at-5-20-16-PM.jpg"
           ]
         }
       }
@@ -148,6 +148,19 @@ export const translations = {
       goHome: 'Voltar à Página Principal',
       prevMember: 'Membro anterior',
       nextMember: 'Próximo membro',
+      knowMe: 'Conheça-me',
+      positions: {
+        ceo: 'CEO & Fundadora',
+        guide: 'Guia Principal',
+        community: 'Gestor de Relações Comunitárias',
+        coordinator: 'Coordenadora de Experiências',
+      },
+      teamDescriptions: {
+        filomena: 'Sou feita de histórias contadas à sombra do cajueiro, de risos partilhados e caminhos de poeira e sol. Sou batuque, sou mussiro, sou abraço de vizinho e cheiro de comida no quintal.',
+        luis: 'Sou feito de baías de água turquesa, dunas que brilham ao sol e mangais que escondem histórias. Sou barco que desliza devagar, cocos a cair no quintal e risos que se misturam com o vento do norte.',
+        salimo: 'Sou feito de redes lançadas ao amanhecer, de cheiro a peixe fresco e sal na pele. Sou o canto das gaivotas na baía, o ritmo das ondas e histórias contadas ao luar.',
+        celma: 'Sou feita de areia nos pés e sal no cabelo, de pôr-do-sol que pinta a baía e risos que ecoam pelos caminhos. Sou fruta que refresca, histórias que se contam ao vento e memórias que ficam para sempre.',
+      },
     },
     splash: {
         tagline: 'A alma de Cabo Delgado - Moçambique',
@@ -165,7 +178,6 @@ export const translations = {
       institutional: 'Parceiros Institucionais',
       private: 'Parceiros Privados'
     },
-    // FIX: Add missing bahiaBanner translation to fix type error.
     bahiaBanner: {
       line1: 'Website criado e gerido pela',
     },
@@ -252,8 +264,8 @@ export const translations = {
         },
         cultural: {
           images: [
-            "https://i.postimg.cc/zXWx2S4R/Whats_App_Image_2025_12_26_at_5_36_27_PM_(1).jpg",
-            "https://i.postimg.cc/C1PGddtt/Whats_App-Image-2025-12-26-at-5-36-27-PM.jpg",
+            "https://i.postimg.cc/zXWx2S4R/Whats_App-Image-2025_12_26_at_5_36_27_PM_(1).jpg",
+            "https://i.postimg.cc/C1PGddtt/Whats_App-Image-2025-12-26-at-5_36_27_PM.jpg",
             "https://i.postimg.cc/nL57tNDf/Whats_App-Image-2025-12-26-at-5-48-56-PM.jpg",
             "https://i.postimg.cc/LXnTtzz6/Whats_App-Image-2025-12-26-at-5-36-29-PM.jpg",
             "https://i.postimg.cc/QxkpW6RV/Whats_App-Image-2025-12-26-at-5-49-24-PM.jpg"
@@ -261,7 +273,7 @@ export const translations = {
         },
         sunset: {
           images: [
-            "https://i.postimg.cc/s26XFWbV/Whats-App-Image-2025-12-26-at-6-01-44-PM.jpg",
+            "https://i.postimg.cc/s26XFWbV/Whats_App-Image-2025-12-26-at-6-01-44-PM.jpg",
             "https://i.postimg.cc/fW7GJsRQ/Whats_App-Image-2025-12-26-at-6-06-22-PM.jpg",
             "https://i.postimg.cc/B6TVL5sB/Whats_App-Image-2025-12-26-at-6-05-53-PM.jpg",
             "https://i.postimg.cc/4xHwHvQh/Whats_App-Image-2025-12-26-at-6-07-31-PM.jpg",
@@ -279,10 +291,10 @@ export const translations = {
         relax: {
           images: [
             "https://i.postimg.cc/jj2L8vCh/Whats_App_Image_2025_12_26_at_6_36_29_PM.jpg",
-            "https://i.postimg.cc/BQJZYNVX/Whats_App_Image_2025_12_26_at_6_36_28_PM-(1).jpg",
-            "https://i.postimg.cc/vBj8SdCD/Whats_App_Image_2025_12_26_at_5_20_17_PM.jpg",
-            "https://i.postimg.cc/5yYyxtLD/Whats_App_Image_2025_12_26_at_5_20_37_PM.jpg",
-            "https://i.postimg.cc/Y9tQqQSS/Whats_App_Image_2025_12_26_at_5_20_16_PM.jpg"
+            "https://i.postimg.cc/BQJZYNVX/Whats_App-Image-2025-12-26-at-6_36_28_PM-(1).jpg",
+            "https://i.postimg.cc/vBj8SdCD/Whats_App-Image-2025-12-26-at-5-20-17-PM.jpg",
+            "https://i.postimg.cc/5yYyxtLD/Whats_App-Image-2025-12-26-at-5-20-37-PM.jpg",
+            "https://i.postimg.cc/Y9tQqQSS/Whats_App-Image-2025-12-26-at-5-20-16-PM.jpg"
           ]
         }
       }
@@ -319,6 +331,19 @@ export const translations = {
       goHome: 'Back to Main Page',
       prevMember: 'Previous member',
       nextMember: 'Next member',
+      knowMe: 'Get to know me',
+      positions: {
+        ceo: 'CEO & Founder',
+        guide: 'Lead Guide',
+        community: 'Community Relations Manager',
+        coordinator: 'Experience Coordinator',
+      },
+      teamDescriptions: {
+        filomena: 'I am made of stories told in the shade of the cashew tree, of shared laughter and paths of dust and sun. I am the drumbeat, I am mussiro, I am the embrace of a neighbor and the smell of food in the backyard.',
+        luis: 'I am made of turquoise water bays, dunes that shine in the sun, and mangroves that hide stories. I am a boat that glides slowly, coconuts falling in the yard, and laughter that mixes with the north wind.',
+        salimo: 'I am made of nets cast at dawn, of the smell of fresh fish and salt on the skin. I am the song of seagulls in the bay, the rhythm of the waves, and stories told under the moonlight.',
+        celma: 'I am made of sand on my feet and salt in my hair, of sunsets that paint the bay and laughter that echoes through the paths. I am refreshing fruit, stories told to the wind, and memories that last forever.',
+      },
     },
     splash: {
       tagline: 'The soul of Cabo Delgado - Mozambique',
@@ -336,7 +361,6 @@ export const translations = {
       institutional: 'Institutional Partners',
       private: 'Private Partners'
     },
-    // FIX: Add missing bahiaBanner translation to fix type error.
     bahiaBanner: {
       line1: 'Website created and managed by',
     },

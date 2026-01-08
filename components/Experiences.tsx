@@ -10,25 +10,42 @@ const experienceData = [
   { key: "relax", image: "https://i.postimg.cc/jj2L8vCh/Whats_App_Image_2025_12_26_at_6_36_29_PM.jpg" },
 ];
 
-const ExperienceCard: React.FC<{ title: string; description: string; image: string; href: string }> = ({ title, description, image, href }) => {
-  const { texts } = useLanguage();
-  
+const ExperienceCard: React.FC<{ title: string; description: string; image: string; href: string; viewMoreText: string; }> = ({ title, description, image, href, viewMoreText }) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     window.location.hash = href;
   };
 
   return (
-    <a href={href} onClick={handleClick} className="group relative block overflow-hidden rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
-      <img src={image} alt={title} className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-      <div className="absolute bottom-0 left-0 p-6 text-white w-full">
-        <h3 className="text-2xl font-bold mb-2">{title}</h3>
-        <p className="text-gray-200 leading-relaxed opacity-100 transition-opacity duration-300 group-hover:opacity-0 h-20">{description}</p>
-        <div className="absolute bottom-6 left-6 right-6 flex items-center justify-center opacity-0 transition-all duration-300 group-hover:opacity-100">
-          <span className="font-bold text-lg">{texts.experiences.viewMore}</span>
-          {/* FIX: Removed duplicate attributes from the SVG element. */}
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+    <a 
+      href={href} 
+      onClick={handleClick} 
+      className="group relative block h-[480px] overflow-hidden rounded-xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-2xl"
+    >
+      <img 
+        src={image} 
+        alt={title} 
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
+      
+      <div className="relative h-full flex flex-col justify-end p-6 text-white">
+        <div className="transform transition-transform duration-300 group-hover:-translate-y-2">
+          <h3 className="text-3xl font-bold mb-2" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+            {title}
+          </h3>
+          <p className="text-base text-gray-200 leading-relaxed max-w-sm opacity-90 line-clamp-3">
+            {description}
+          </p>
+        </div>
+        
+        <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+             <span className="font-semibold text-white inline-flex items-center">
+              {viewMoreText}
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
         </div>
       </div>
     </a>
@@ -57,6 +74,7 @@ const Experiences: React.FC = () => {
               image={exp.image}
               title={experiences[exp.key]?.title || ''}
               description={experiences[exp.key]?.description || ''}
+              viewMoreText={texts.experiences.viewMore}
             />
           ))}
         </div>
