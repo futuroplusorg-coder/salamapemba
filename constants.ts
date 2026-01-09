@@ -11,7 +11,7 @@ export const FINAL_PARTNERS: Partner[] = [
   { id: 12, name: 'P3', category: 'institucional', logoUrl: 'https://i.postimg.cc/rKgmHKtz/Parceiros-3.png' },
   { id: 13, name: 'P4', category: 'institucional', logoUrl: 'https://i.postimg.cc/w1GB6ZVb/Parceiros-4.png' },
   { id: 9, name: 'P16', category: 'institucional', logoUrl: 'https://i.postimg.cc/SYfskKT5/Parceiros-16.png' },
-  { id: 8, name: 'P15', category: 'privado', logoUrl: 'https://i.postimg.cc/kRv4q51N/Parceiros-15.png' },
+  { id: 8, name: 'P15', category: 'institucional', logoUrl: 'https://i.postimg.cc/kRv4q51N/Parceiros-15.png' },
   
   // --- PRIVADOS ---
   { id: 10, name: 'P17', category: 'privado', logoUrl: 'https://i.postimg.cc/6yBqzdqr/Parceiros-17.png' }, // LOGO 17 - PRIMEIRA DOS PRIVADOS
