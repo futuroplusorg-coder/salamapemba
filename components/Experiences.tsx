@@ -5,9 +5,10 @@ const experienceData = [
   { key: "quirimbas", image: "https://i.postimg.cc/kXYVWxYc/Whats-App-Image-2025-12-26-at-4-55-31-PM.jpg" },
   { key: "snorkeling", image: "https://i.postimg.cc/MKkJRBsV/WhatsApp_Image_2025-10-23_at_2.36.25_PM.jpg" },
   { key: "cultural", image: "https://i.postimg.cc/zXWx2S4R/Whats_App_Image_2025_12_26_at_5_36_27_PM_(1).jpg" },
-  { key: "sunset", image: "https://i.postimg.cc/s26XFWbV/Whats-App-Image-2025-12-26-at-6-01-44-PM.jpg" },
+  { key: "sunset", image: "https://i.postimg.cc/s26XFWbV/Whats_App-Image-2025-12-26-at-6-01-44-PM.jpg" },
   { key: "cooking", image: "https://i.postimg.cc/fyTy1KR3/Whats_App_Image_2025_12_26_at_6_22_57_PM_(1).jpg" },
   { key: "relax", image: "https://i.postimg.cc/jj2L8vCh/Whats_App_Image_2025_12_26_at_6_36_29_PM.jpg" },
+  { key: "junior", image: "https://i.postimg.cc/K8KvTMCP/Whats-App-Image-2026-01-09-at-11-32-57-AM.jpg" },
 ];
 
 const ExperienceCard: React.FC<{ title: string; description: string; image: string; href: string; viewMoreText: string; }> = ({ title, description, image, href, viewMoreText }) => {

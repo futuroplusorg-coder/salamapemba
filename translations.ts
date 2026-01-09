@@ -59,6 +59,10 @@ export const translations = {
           title: 'Tour Histórico e Cultural pela Cidade de Pemba',
           description: 'Descubra a história, cultura e identidade de Pemba neste passeio guiado pela cidade. Explore ruas vibrantes, mercados locais e marcos históricos que revelam a riqueza cultural e o passado desta cidade única.',
         },
+        junior: {
+          title: 'Pequenos Exploradores – Salama Pemba Junior',
+          description: 'Experiências autênticas para crianças e adolescentes explorarem a natureza e cultura de Cabo Delgado, desenvolvendo conhecimento local e sentido de pertença de forma divertida e educativa.',
+        },
       },
       details: {
         back: 'Voltar às Experiências',
@@ -113,12 +117,21 @@ export const translations = {
             "https://i.postimg.cc/5yYyxtLD/Whats_App-Image-2025-12-26-at-5-20-37-PM.jpg",
             "https://i.postimg.cc/Y9tQqQSS/Whats_App-Image-2025-12-26-at-5-20-16-PM.jpg"
           ]
+        },
+        junior: {
+          images: [
+            "https://i.postimg.cc/K8KvTMCP/Whats-App-Image-2026-01-09-at-11-32-57-AM.jpg",
+            "https://i.postimg.cc/Zq8mPFH0/Whats-App-Image-2026-01-09-at-11-32-42-AM.jpg",
+            "https://i.postimg.cc/9fpSFx1Z/Whats-App-Image-2026-01-09-at-11-32-37-AM.jpg",
+            "https://i.postimg.cc/DzBjKSyQ/Whats-App-Image-2026-01-09-at-11-32-50-AM.jpg",
+            "https://i.postimg.cc/G38CqCXc/Whats-App-Image-2026-01-09-at-11-32-54-AM.jpg"
+          ]
         }
       }
     },
     gallery: {
-      title: 'Momentos em Pemba',
-      subtitle: 'Explore a beleza estonteante e a cultura vibrante de Pemba através das nossas lentes.',
+      title: 'Momentos',
+      subtitle: 'Explore a beleza estonteante e a cultura vibrante de Cabo Delgado através das nossas lentes.',
       close: 'Fechar visualização',
       prev: 'Imagem anterior',
       next: 'Próxima imagem',
@@ -159,7 +172,7 @@ export const translations = {
         filomena: 'Sou feita de histórias contadas à sombra do cajueiro, de risos partilhados e caminhos de poeira e sol. Sou batuque, sou mussiro, sou abraço de vizinho e cheiro de comida no quintal.',
         luis: 'Sou feito de baías de água turquesa, dunas que brilham ao sol e mangais que escondem histórias. Sou barco que desliza devagar, cocos a cair no quintal e risos que se misturam com o vento do norte.',
         salimo: 'Sou feito de redes lançadas ao amanhecer, de cheiro a peixe fresco e sal na pele. Sou o canto das gaivotas na baía, o ritmo das ondas e histórias contadas ao luar.',
-        celma: 'Sou feita de areia nos pés e sal no cabelo, de pôr-do-sol que pinta a baía e risos que ecoam pelos caminhos. Sou fruta que refresca, histórias que se contam ao vento e memórias que ficam para sempre.',
+        celma: 'Sou embondeiro, o frondoso que carrega ulapah, união e sorriso dos que viveram e vivem na luz verde da nossa baia.',
       },
     },
     splash: {
@@ -242,6 +255,10 @@ export const translations = {
           title: 'Historical and Cultural Tour of Pemba City',
           description: 'Discover the history, culture, and identity of Pemba on this guided city tour. Explore vibrant streets, local markets, and historical landmarks that reveal the cultural richness and past of this unique city.',
         },
+        junior: {
+          title: 'Little Explorers – Salama Pemba Junior',
+          description: 'Authentic experiences for children and teenagers to explore the nature and culture of Cabo Delgado, developing local knowledge and a sense of belonging in a fun and educational way.',
+        },
       },
       details: {
         back: 'Back to Experiences',
@@ -264,7 +281,7 @@ export const translations = {
         },
         cultural: {
           images: [
-            "https://i.postimg.cc/zXWx2S4R/Whats_App-Image-2025_12_26_at_5_36_27_PM_(1).jpg",
+            "https://i.postimg.cc/zXWx2S4R/Whats_App_Image_2025_12_26_at_5_36_27_PM_(1).jpg",
             "https://i.postimg.cc/C1PGddtt/Whats_App-Image-2025-12-26-at-5_36_27_PM.jpg",
             "https://i.postimg.cc/nL57tNDf/Whats_App-Image-2025-12-26-at-5-48-56-PM.jpg",
             "https://i.postimg.cc/LXnTtzz6/Whats_App-Image-2025-12-26-at-5-36-29-PM.jpg",
@@ -296,12 +313,21 @@ export const translations = {
             "https://i.postimg.cc/5yYyxtLD/Whats_App-Image-2025-12-26-at-5-20-37-PM.jpg",
             "https://i.postimg.cc/Y9tQqQSS/Whats_App-Image-2025-12-26-at-5-20-16-PM.jpg"
           ]
+        },
+        junior: {
+          images: [
+            "https://i.postimg.cc/K8KvTMCP/Whats-App-Image-2026-01-09-at-11-32-57-AM.jpg",
+            "https://i.postimg.cc/Zq8mPFH0/Whats-App-Image-2026-01-09-at-11-32-42-AM.jpg",
+            "https://i.postimg.cc/9fpSFx1Z/Whats-App-Image-2026-01-09-at-11-32-37-AM.jpg",
+            "https://i.postimg.cc/DzBjKSyQ/Whats-App-Image-2026-01-09-at-11-32-50-AM.jpg",
+            "https://i.postimg.cc/G38CqCXc/Whats-App-Image-2026-01-09-at-11-32-54-AM.jpg"
+          ]
         }
       }
     },
     gallery: {
-      title: 'Moments in Pemba',
-      subtitle: 'Explore the stunning beauty and vibrant culture of Pemba through our lenses.',
+      title: 'Moments',
+      subtitle: 'Explore the stunning beauty and vibrant culture of Cabo Delgado through our lenses.',
       close: 'Close viewer',
       prev: 'Previous image',
       next: 'Next image',
@@ -342,7 +368,7 @@ export const translations = {
         filomena: 'I am made of stories told in the shade of the cashew tree, of shared laughter and paths of dust and sun. I am the drumbeat, I am mussiro, I am the embrace of a neighbor and the smell of food in the backyard.',
         luis: 'I am made of turquoise water bays, dunes that shine in the sun, and mangroves that hide stories. I am a boat that glides slowly, coconuts falling in the yard, and laughter that mixes with the north wind.',
         salimo: 'I am made of nets cast at dawn, of the smell of fresh fish and salt on the skin. I am the song of seagulls in the bay, the rhythm of the waves, and stories told under the moonlight.',
-        celma: 'I am made of sand on my feet and salt in my hair, of sunsets that paint the bay and laughter that echoes through the paths. I am refreshing fruit, stories told to the wind, and memories that last forever.',
+        celma: 'I am the baobab tree, the leafy one that carries ulapah, unity, and the smiles of those who have lived and live in the green light of our bay.',
       },
     },
     splash: {
